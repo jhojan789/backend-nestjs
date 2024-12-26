@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-          cache-dependency-path: ./yarn-lock.json
+          cache-dependency-path: ./package-lock.json
       - name: install
         shell: bash
         run: npm ci
