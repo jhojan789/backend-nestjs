@@ -19,4 +19,13 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World!');
     });
   });
+
+  describe('/users', () => {
+    it('should return a list of users', () => {
+      expect(appController.getUsers()).toEqual([
+        { name: 'user1' },
+        { name: 'user2' },
+      ]);
+    });
+  });
 });
