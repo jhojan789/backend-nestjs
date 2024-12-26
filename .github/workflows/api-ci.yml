@@ -17,8 +17,8 @@ jobs:
       - name: Set up Nodejs
         uses: actions/setup-node@v3
         with:
-          node-version: 22
-          cache: 'yarn'
+          node-version: 16
+          cache: 'npm'
           cache-dependency-path: ./yarn-lock.json
       - name: install
         shell: bash
